@@ -24,6 +24,7 @@ public class CustomCursor : MonoBehaviour {
     img.color = clrDefault;
     var ray = Camera.main.ScreenPointToRay(transform.position);
     if (Physics.Raycast(ray, out RaycastHit hit, 100)) {
+      //Debug.Log("Hit: " + hit.collider.name);  // FOR DEBUGGING
       if (hit.collider.CompareTag("Clickable")) {
         img.sprite = sprHover;
         img.color = clrHover;

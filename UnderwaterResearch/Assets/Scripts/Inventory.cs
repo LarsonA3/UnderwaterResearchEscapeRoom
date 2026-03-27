@@ -1,51 +1,63 @@
-using System.Runtime.CompilerServices;
+using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+[Serializable]
+public class InventorySlot
+{
+    // set in inspector
+    public Image img;
+
+    [HideInInspector] public InventoryItem item;
+}
 
 public class Inventory : MonoBehaviour
 {
-    //other scripts can access this
-    public static int Held; // 0 - None, 1 - Multitool, 2- Lure Module
+    // set in inspector
+    public List<InventorySlot> slots;
 
-    public static bool MultitoolUnlocked = false; //use these to unlock items at the correct gameplay times.
-    public static bool LureUnlocked = false; 
-
-
+    // other fields/properties
+    public static Inventory Instance { get; private set; }
     private InputSystem_Actions input;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
-        Held = 0; // plr starts holding nothing
-
-        input = new InputSystem_Actions();
+        Instance = this;
+        input = new();
         input.Enable();
+        input.UI.Enable();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (input.Player.InventoryEquip1.WasPressedThisFrame())
+        if (input.UI.UseInventoryItem1.WasPressedThisFrame())
         {
-            // no item is always unlocked..duh
-            Held = 0;
-            print("Player equipped slot 1");
-        } else if (input.Player.InventoryEquip2.WasPressedThisFrame())
+            Use(0);
+        }
+        if (input.UI.UseInventoryItem2.WasPressedThisFrame())
         {
-            if (MultitoolUnlocked)
+            Use(1);
+        }
+    }
+
+    private void Use(int i)
+    {
+        slots[i].item.Use();
+    }
+
+    public bool Add(InventoryItem item)
+    {
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (slots[i].item == null)
             {
-                Held = 1;
-                print("Player equipped slot 2");
-            }
-        } else if (input.Player.InventoryEquip3.WasPressedThisFrame())
-        {
-            if (LureUnlocked)
-            {
-                Held = 2;
-                print("Player equipped slot 3");
+                slots[i].item = item;
+                slots[i].img.gameObject.SetActive(true);
+                slots[i].img.sprite = item.sprHud;
+                return true;
             }
         }
-
+        return false;
     }
-
-
 }

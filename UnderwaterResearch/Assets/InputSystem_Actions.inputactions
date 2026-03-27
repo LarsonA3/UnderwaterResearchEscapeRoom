@@ -86,33 +86,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "InventoryEquip1",
-                    "type": "Button",
-                    "id": "29256940-01d9-498f-a36b-c9fc3b4a422f",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "InventoryEquip2",
-                    "type": "Button",
-                    "id": "fdc09bce-9c0c-4ad9-9aa8-0d8a5e4957cc",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "InventoryEquip3",
-                    "type": "Button",
-                    "id": "b5a6ae9f-e88e-40ed-9774-877b7e653f49",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -500,39 +473,6 @@
                     "action": "Crouch",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "44e3e54d-ac4b-4f3e-9c89-66d115f0d00b",
-                    "path": "<Keyboard>/1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "InventoryEquip1",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "321bcbee-c2df-43d1-a8bb-aa2411cb14fc",
-                    "path": "<Keyboard>/2",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "InventoryEquip2",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "64cd9239-3424-4bf2-a4f4-3bd2db545d12",
-                    "path": "<Keyboard>/3",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "InventoryEquip3",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -626,6 +566,33 @@
                     "type": "PassThrough",
                     "id": "9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be",
                     "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UseInventoryItem1",
+                    "type": "Button",
+                    "id": "54498d6d-0621-4800-a040-b947cc76f491",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UseInventoryItem2",
+                    "type": "Button",
+                    "id": "8e75a679-7b9b-421d-ae86-6ecaf884f26f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Click1",
+                    "type": "Button",
+                    "id": "af4ac77e-293b-4597-ac47-5f42b650ac8d",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -1047,6 +1014,39 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a79414f3-0b92-4555-b102-7cf215ea1860",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseInventoryItem1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dbfbee7b-400d-48c4-b87d-f25fee5dd244",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseInventoryItem2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b1e0c0a0-38dc-4c1e-bffe-f5bdfaedc8f1",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -172,33 +172,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""InventoryEquip1"",
-                    ""type"": ""Button"",
-                    ""id"": ""29256940-01d9-498f-a36b-c9fc3b4a422f"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""InventoryEquip2"",
-                    ""type"": ""Button"",
-                    ""id"": ""fdc09bce-9c0c-4ad9-9aa8-0d8a5e4957cc"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""InventoryEquip3"",
-                    ""type"": ""Button"",
-                    ""id"": ""b5a6ae9f-e88e-40ed-9774-877b7e653f49"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -586,39 +559,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""action"": ""Crouch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""44e3e54d-ac4b-4f3e-9c89-66d115f0d00b"",
-                    ""path"": ""<Keyboard>/1"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""InventoryEquip1"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""321bcbee-c2df-43d1-a8bb-aa2411cb14fc"",
-                    ""path"": ""<Keyboard>/2"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""InventoryEquip2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""64cd9239-3424-4bf2-a4f4-3bd2db545d12"",
-                    ""path"": ""<Keyboard>/3"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""InventoryEquip3"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -712,6 +652,33 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""type"": ""PassThrough"",
                     ""id"": ""9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be"",
                     ""expectedControlType"": ""Quaternion"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UseInventoryItem1"",
+                    ""type"": ""Button"",
+                    ""id"": ""54498d6d-0621-4800-a040-b947cc76f491"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UseInventoryItem2"",
+                    ""type"": ""Button"",
+                    ""id"": ""8e75a679-7b9b-421d-ae86-6ecaf884f26f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Click1"",
+                    ""type"": ""Button"",
+                    ""id"": ""af4ac77e-293b-4597-ac47-5f42b650ac8d"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -1135,6 +1102,39 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""action"": ""TrackedDeviceOrientation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a79414f3-0b92-4555-b102-7cf215ea1860"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UseInventoryItem1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dbfbee7b-400d-48c4-b87d-f25fee5dd244"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UseInventoryItem2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b1e0c0a0-38dc-4c1e-bffe-f5bdfaedc8f1"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Click1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1213,9 +1213,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_Previous = m_Player.FindAction("Previous", throwIfNotFound: true);
         m_Player_Next = m_Player.FindAction("Next", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
-        m_Player_InventoryEquip1 = m_Player.FindAction("InventoryEquip1", throwIfNotFound: true);
-        m_Player_InventoryEquip2 = m_Player.FindAction("InventoryEquip2", throwIfNotFound: true);
-        m_Player_InventoryEquip3 = m_Player.FindAction("InventoryEquip3", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1228,6 +1225,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_UI_ScrollWheel = m_UI.FindAction("ScrollWheel", throwIfNotFound: true);
         m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
+        m_UI_UseInventoryItem1 = m_UI.FindAction("UseInventoryItem1", throwIfNotFound: true);
+        m_UI_UseInventoryItem2 = m_UI.FindAction("UseInventoryItem2", throwIfNotFound: true);
+        m_UI_Click1 = m_UI.FindAction("Click1", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -1318,9 +1318,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Previous;
     private readonly InputAction m_Player_Next;
     private readonly InputAction m_Player_Sprint;
-    private readonly InputAction m_Player_InventoryEquip1;
-    private readonly InputAction m_Player_InventoryEquip2;
-    private readonly InputAction m_Player_InventoryEquip3;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1368,18 +1365,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Sprint".
         /// </summary>
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
-        /// <summary>
-        /// Provides access to the underlying input action "Player/InventoryEquip1".
-        /// </summary>
-        public InputAction @InventoryEquip1 => m_Wrapper.m_Player_InventoryEquip1;
-        /// <summary>
-        /// Provides access to the underlying input action "Player/InventoryEquip2".
-        /// </summary>
-        public InputAction @InventoryEquip2 => m_Wrapper.m_Player_InventoryEquip2;
-        /// <summary>
-        /// Provides access to the underlying input action "Player/InventoryEquip3".
-        /// </summary>
-        public InputAction @InventoryEquip3 => m_Wrapper.m_Player_InventoryEquip3;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1433,15 +1418,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Sprint.started += instance.OnSprint;
             @Sprint.performed += instance.OnSprint;
             @Sprint.canceled += instance.OnSprint;
-            @InventoryEquip1.started += instance.OnInventoryEquip1;
-            @InventoryEquip1.performed += instance.OnInventoryEquip1;
-            @InventoryEquip1.canceled += instance.OnInventoryEquip1;
-            @InventoryEquip2.started += instance.OnInventoryEquip2;
-            @InventoryEquip2.performed += instance.OnInventoryEquip2;
-            @InventoryEquip2.canceled += instance.OnInventoryEquip2;
-            @InventoryEquip3.started += instance.OnInventoryEquip3;
-            @InventoryEquip3.performed += instance.OnInventoryEquip3;
-            @InventoryEquip3.canceled += instance.OnInventoryEquip3;
         }
 
         /// <summary>
@@ -1480,15 +1456,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Sprint.started -= instance.OnSprint;
             @Sprint.performed -= instance.OnSprint;
             @Sprint.canceled -= instance.OnSprint;
-            @InventoryEquip1.started -= instance.OnInventoryEquip1;
-            @InventoryEquip1.performed -= instance.OnInventoryEquip1;
-            @InventoryEquip1.canceled -= instance.OnInventoryEquip1;
-            @InventoryEquip2.started -= instance.OnInventoryEquip2;
-            @InventoryEquip2.performed -= instance.OnInventoryEquip2;
-            @InventoryEquip2.canceled -= instance.OnInventoryEquip2;
-            @InventoryEquip3.started -= instance.OnInventoryEquip3;
-            @InventoryEquip3.performed -= instance.OnInventoryEquip3;
-            @InventoryEquip3.canceled -= instance.OnInventoryEquip3;
         }
 
         /// <summary>
@@ -1536,6 +1503,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_ScrollWheel;
     private readonly InputAction m_UI_TrackedDevicePosition;
     private readonly InputAction m_UI_TrackedDeviceOrientation;
+    private readonly InputAction m_UI_UseInventoryItem1;
+    private readonly InputAction m_UI_UseInventoryItem2;
+    private readonly InputAction m_UI_Click1;
     /// <summary>
     /// Provides access to input actions defined in input action map "UI".
     /// </summary>
@@ -1587,6 +1557,18 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "UI/TrackedDeviceOrientation".
         /// </summary>
         public InputAction @TrackedDeviceOrientation => m_Wrapper.m_UI_TrackedDeviceOrientation;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/UseInventoryItem1".
+        /// </summary>
+        public InputAction @UseInventoryItem1 => m_Wrapper.m_UI_UseInventoryItem1;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/UseInventoryItem2".
+        /// </summary>
+        public InputAction @UseInventoryItem2 => m_Wrapper.m_UI_UseInventoryItem2;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/Click1".
+        /// </summary>
+        public InputAction @Click1 => m_Wrapper.m_UI_Click1;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1643,6 +1625,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @TrackedDeviceOrientation.started += instance.OnTrackedDeviceOrientation;
             @TrackedDeviceOrientation.performed += instance.OnTrackedDeviceOrientation;
             @TrackedDeviceOrientation.canceled += instance.OnTrackedDeviceOrientation;
+            @UseInventoryItem1.started += instance.OnUseInventoryItem1;
+            @UseInventoryItem1.performed += instance.OnUseInventoryItem1;
+            @UseInventoryItem1.canceled += instance.OnUseInventoryItem1;
+            @UseInventoryItem2.started += instance.OnUseInventoryItem2;
+            @UseInventoryItem2.performed += instance.OnUseInventoryItem2;
+            @UseInventoryItem2.canceled += instance.OnUseInventoryItem2;
+            @Click1.started += instance.OnClick1;
+            @Click1.performed += instance.OnClick1;
+            @Click1.canceled += instance.OnClick1;
         }
 
         /// <summary>
@@ -1684,6 +1675,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @TrackedDeviceOrientation.started -= instance.OnTrackedDeviceOrientation;
             @TrackedDeviceOrientation.performed -= instance.OnTrackedDeviceOrientation;
             @TrackedDeviceOrientation.canceled -= instance.OnTrackedDeviceOrientation;
+            @UseInventoryItem1.started -= instance.OnUseInventoryItem1;
+            @UseInventoryItem1.performed -= instance.OnUseInventoryItem1;
+            @UseInventoryItem1.canceled -= instance.OnUseInventoryItem1;
+            @UseInventoryItem2.started -= instance.OnUseInventoryItem2;
+            @UseInventoryItem2.performed -= instance.OnUseInventoryItem2;
+            @UseInventoryItem2.canceled -= instance.OnUseInventoryItem2;
+            @Click1.started -= instance.OnClick1;
+            @Click1.performed -= instance.OnClick1;
+            @Click1.canceled -= instance.OnClick1;
         }
 
         /// <summary>
@@ -1852,27 +1852,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnSprint(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "InventoryEquip1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnInventoryEquip1(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "InventoryEquip2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnInventoryEquip2(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "InventoryEquip3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnInventoryEquip3(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
@@ -1951,5 +1930,26 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "UseInventoryItem1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUseInventoryItem1(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "UseInventoryItem2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUseInventoryItem2(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Click1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnClick1(InputAction.CallbackContext context);
     }
 }

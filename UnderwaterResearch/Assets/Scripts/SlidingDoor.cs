@@ -4,12 +4,15 @@ using UnityEngine;
 public class SlidingDoor : MonoBehaviour
 {
     // This is a fsm for an unlocked sliding door
+    // DO NOT RENAME "DOOR" OR "LOCKED" CHILDREN IN INSPECTOR! THIS WILL BREAK THE DOOR!
+
     private GameObject door;
 
     private Vector3 Openpos = new Vector3(0,0,-1.541f);
     private Vector3 Closedpos = new Vector3(0, 0, 0);
 
     public float speed = 2f;
+    private bool locked = false;
 
     enum DoorState
     {
@@ -24,7 +27,10 @@ public class SlidingDoor : MonoBehaviour
     private void Awake()
     {
         state = DoorState.Closed;
-        door = this.transform.Find("Door").gameObject;
+        door = this.transform.Find("Door").gameObject; 
+            
+        //see if door is locked
+        if (this.transform.Find("Locked")) { locked = true; } 
     }
 
     // Update is called once per frame
@@ -63,19 +69,19 @@ public class SlidingDoor : MonoBehaviour
 
     void TransitionTo(DoorState newstate)
     {
-        switch(state)
+        switch (state)
         {
             case DoorState.Open:
-                if (newstate == DoorState.Closing) state = newstate; 
+                if (newstate == DoorState.Closing) { state = newstate; print("Door Closing"); }
                 break;
             case DoorState.Closing:
-                if (newstate == DoorState.Closed) { state = newstate; print("Door closing"); }
+                if (newstate == DoorState.Closed) { state = newstate; }
                 break;
             case DoorState.Closed:
-                if (newstate == DoorState.Opening) state = newstate;
+                if (newstate == DoorState.Opening && locked == false) { state = newstate; print("Door opening"); }
                 break;
             case DoorState.Opening:
-                if (newstate == DoorState.Open) { state = newstate; print("Door opening"); }
+                if (newstate == DoorState.Open) { state = newstate; }
                 break;
 
         }
@@ -86,4 +92,14 @@ public class SlidingDoor : MonoBehaviour
         if (state == DoorState.Closed) { TransitionTo(DoorState.Opening); }
         else if (state == DoorState.Open) { TransitionTo(DoorState.Closing); }
     }
+
+
+    void Unlock()
+    {
+        print("door unlocked");
+        locked = false;
+    }
 }
+
+
+    

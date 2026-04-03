@@ -24,7 +24,7 @@ public class SlidingDoor : MonoBehaviour
     DoorState state;
 
 
-    private void Awake()
+    private void Start()
     {
         state = DoorState.Closed;
         door = this.transform.Find("Door").gameObject; 

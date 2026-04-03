@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
+
 
 [Serializable]
 public class InventorySlot
@@ -11,6 +13,7 @@ public class InventorySlot
 
     [HideInInspector] public InventoryItem item;
 }
+
 
 public class Inventory : MonoBehaviour
 {
@@ -60,4 +63,5 @@ public class Inventory : MonoBehaviour
         }
         return false;
     }
+
 }

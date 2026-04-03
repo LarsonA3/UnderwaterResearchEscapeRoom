@@ -449,7 +449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2718059304268005133}
   m_Layer: 0
-  m_Name: Printer
+  m_Name: 3DPrinter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

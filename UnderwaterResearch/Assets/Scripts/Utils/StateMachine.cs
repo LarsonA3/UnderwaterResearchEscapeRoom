@@ -19,9 +19,14 @@ using System.Collections.Generic;
     Usage: new Transition("Run", () => speed > 0.5f)
     Transition to "Run" state if speed is > 0.5f.
 */
-public class Transition(string targetState, Func<bool> condition) {
-    public string       targetState     = targetState;
-    public Func<bool>   condition       = condition;
+public class Transition {
+    public string       targetState;
+    public Func<bool>   condition;
+
+    public Transition(string targetState, Func<bool> condition) {
+        this.targetState = targetState;
+        this.condition = condition;
+    }
 }
 
 
@@ -35,12 +40,18 @@ public class Transition(string targetState, Func<bool> condition) {
                 onExit:     () => { }
             );
 */
-public class State(
-    string              name,
-    State.EnterAction   onEnter,
-    State.UpdateAction  onUpdate,
-    State.ExitAction    onExit
-) {
+public class State {
+    public State(
+        string              name,
+        EnterAction onEnter,
+        UpdateAction onUpdate,
+        ExitAction onExit
+    ) {
+        m_name = name;
+        m_onEnter = onEnter;
+        m_onUpdate = onUpdate;
+        m_onExit = onExit;
+    }
 // public:
     public delegate void EnterAction();
     public delegate void UpdateAction(float dt);
@@ -66,12 +77,12 @@ public class State(
     }
 
 // private:
-    private string              m_name                  = name;
-    private EnterAction         m_onEnter               = onEnter;
-    private UpdateAction        m_onUpdate              = onUpdate;
-    private ExitAction          m_onExit                = onExit;
+    private string              m_name;
+    private EnterAction         m_onEnter;
+    private UpdateAction        m_onUpdate;
+    private ExitAction          m_onExit;
 
-    private List<Transition>    m_transitions           = new List<Transition>();
+    private List<Transition>    m_transitions           = new();
 }
 
 
@@ -102,6 +113,6 @@ public class StateMachine {
     public string GetCurrentState() { return m_currentState?.GetName(); }
 
 // private:
-    private Dictionary<string, State> m_states = new Dictionary<string, State>();
+    private Dictionary<string, State> m_states = new();
     private State m_currentState = null;
 }

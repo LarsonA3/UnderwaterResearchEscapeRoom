@@ -36,6 +36,10 @@ public class SlidingDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!this.transform.Find("Locked"))
+        {
+            locked = false;
+        }
         switch (state)
         {
             case DoorState.Open:

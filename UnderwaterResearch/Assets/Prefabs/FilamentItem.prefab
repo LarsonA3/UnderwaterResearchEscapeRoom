@@ -12,10 +12,11 @@ GameObject:
   - component: {fileID: 4869337992345755693}
   - component: {fileID: 1069086224712124105}
   - component: {fileID: 799435224198440735}
-  - component: {fileID: 3360897593404645907}
+  - component: {fileID: 4970057321833849511}
+  - component: {fileID: 7043486637625287430}
   m_Layer: 0
   m_Name: FilamentItem
-  m_TagString: Untagged
+  m_TagString: Clickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +57,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_73923435-b107-4a0b-bcfd-61bbf38c8d5e
+    name: UM_OperatedMesh_5954c6d6-1e88-4d20-a621-d539e4bc9544
     skinnedMesh: 0
     sharedMesh: {fileID: 1839575023384813395}
     buidVersion:
@@ -69,7 +70,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 73923435-b107-4a0b-bcfd-61bbf38c8d5e
+  sourceMeshRendererGUID: 5954c6d6-1e88-4d20-a621-d539e4bc9544
   guid: 918dbe75-c36a-4c0c-b29d-8071fdcf7f17
   localOptions:
     RecalculateTangents: 0
@@ -148,7 +149,7 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3360897593404645907
+--- !u!114 &4970057321833849511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,10 +158,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 6423373584215084424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb76e1f01ec7bf4caed53f82c5e0f6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3844866bf123e264e83c842b9a5ec134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FilamentInventoryItem
   sprHud: {fileID: 21300000, guid: 5f7697e57322742198159eacdfbfbd92, type: 3}
+--- !u!65 &7043486637625287430
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423373584215084424}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.35074502, y: 0.6543685, z: 0.33733132}
+  m_Center: {x: 0.17537248, y: -0.32718426, z: -0.16866566}
 --- !u!43 &1839575023384813395
 Mesh:
   m_ObjectHideFlags: 0

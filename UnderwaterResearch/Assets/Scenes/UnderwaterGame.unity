@@ -492,6 +492,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2671178857989215871, guid: 110a12b745020e74fba90112911e77b7, type: 3}
   m_PrefabInstance: {fileID: 244832902}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &285776244
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 285776246}
+  - component: {fileID: 285776245}
+  m_Layer: 0
+  m_Name: 442533cf-1439-4c70-b829-18ccbb7e293e
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &285776245
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285776244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &285776246
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285776244}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &291267135
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +859,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2671178857989215871, guid: 110a12b745020e74fba90112911e77b7, type: 3}
   m_PrefabInstance: {fileID: 334711129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &345015566 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 957290444272419501, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
+  m_PrefabInstance: {fileID: 8098539306784343772}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1001 &428155917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1230,6 +1286,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1291323239112043408, guid: 6ffca38d9d501b74f8bad1a9fb365077, type: 3}
   m_PrefabInstance: {fileID: 676779085}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &684970882 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8444634206861793660, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
+  m_PrefabInstance: {fileID: 8098539306784343772}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1001 &732355558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1736,51 +1803,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2214078437470477101, guid: 0167f87e22235964fa3acf1dbd0de744, type: 3}
   m_PrefabInstance: {fileID: 4898558265927179975}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1031320747
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1031320749}
-  - component: {fileID: 1031320748}
-  m_Layer: 0
-  m_Name: ab87fa82-6946-4c55-8afd-17803870de97
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1031320748
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031320747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &1031320749
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031320747}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1057857095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,6 +1920,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7176381059023993362, guid: 370a0a1691fa21f48a26801920cc8785, type: 3}
   m_PrefabInstance: {fileID: 3803948861557673659}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1081387200 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1644107697285300131, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
+  m_PrefabInstance: {fileID: 8098539306784343772}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1001 &1117797467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2157,6 +2190,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 433972126}
+--- !u!114 &1279565574 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4816586042392263061, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
+  m_PrefabInstance: {fileID: 8098539306784343772}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!4 &1355110947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8671484321125103094, guid: 876744a8581ef3346894d4b73cdaa0d8, type: 3}
@@ -2177,51 +2221,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8923113206749581629, guid: 9157a5cddb4309e48888aca2c83f6fd6, type: 3}
   m_PrefabInstance: {fileID: 331049388410460537}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1553574299
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1553574301}
-  - component: {fileID: 1553574300}
-  m_Layer: 0
-  m_Name: ca8d6a12-4222-4c8a-9196-a02945342dbf
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1553574300
+--- !u!114 &1559021938 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 429522341319832057, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
+  m_PrefabInstance: {fileID: 8098539306784343772}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553574299}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &1553574301
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553574299}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!4 &1585944282 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 71941966114715770, guid: dcf93873ca1302c46b6259bfd3f0cab0, type: 3}
@@ -3595,6 +3605,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5960049050143995191, guid: 60c24bc254b5ae34d9c3fd6b043ce988, type: 3}
+      propertyPath: slots.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960049050143995191, guid: 60c24bc254b5ae34d9c3fd6b043ce988, type: 3}
+      propertyPath: slots.Array.data[0].img
+      value: 
+      objectReference: {fileID: 1279565574}
+    - target: {fileID: 5960049050143995191, guid: 60c24bc254b5ae34d9c3fd6b043ce988, type: 3}
+      propertyPath: slots.Array.data[1].img
+      value: 
+      objectReference: {fileID: 1559021938}
+    - target: {fileID: 5960049050143995191, guid: 60c24bc254b5ae34d9c3fd6b043ce988, type: 3}
+      propertyPath: slots.Array.data[2].img
+      value: 
+      objectReference: {fileID: 684970882}
+    - target: {fileID: 5960049050143995191, guid: 60c24bc254b5ae34d9c3fd6b043ce988, type: 3}
+      propertyPath: slots.Array.data[3].img
+      value: 
+      objectReference: {fileID: 1081387200}
+    - target: {fileID: 5960049050143995191, guid: 60c24bc254b5ae34d9c3fd6b043ce988, type: 3}
+      propertyPath: slots.Array.data[4].img
+      value: 
+      objectReference: {fileID: 345015566}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3632,9 +3666,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 429522341319832057, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957290444272419501, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644107697285300131, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4497374925674580711, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
       propertyPath: m_Name
       value: '[[ UI CANVAS ]]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816586042392263061, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4989953437901876455, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3812,6 +3862,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8444634206861793660, guid: 5bb46e59b9ae37847b4439b90dfd445e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3885,6 +3939,5 @@ SceneRoots:
   - {fileID: 810239043}
   - {fileID: 544303157}
   - {fileID: 331728583}
-  - {fileID: 1031320749}
-  - {fileID: 1553574301}
   - {fileID: 428155917}
+  - {fileID: 285776246}

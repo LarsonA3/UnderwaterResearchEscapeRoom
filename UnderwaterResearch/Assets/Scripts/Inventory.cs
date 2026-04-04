@@ -42,11 +42,30 @@ public class Inventory : MonoBehaviour
         {
             Use(1);
         }
+        if (input.UI.UseInventoryItem3.WasPressedThisFrame())
+        {
+            Use(2);
+        }
+        if (input.UI.UseInventoryItem4.WasPressedThisFrame())
+        {
+            Use(3);
+        }
+        if (input.UI.UseInventoryItem5.WasPressedThisFrame())
+        {
+            Use(4);
+        }
     }
 
     private void Use(int i)
     {
-        slots[i].item.Use();
+        if (slots[i].item == null)
+        {
+            print("HEY! No item in slot " + (i+1));
+        } else
+        {
+            slots[i].item.Use();
+            print("used item in slot " + (i + 1));
+        }
     }
 
     public bool Add(InventoryItem item)

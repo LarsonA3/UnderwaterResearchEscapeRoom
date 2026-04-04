@@ -682,6 +682,33 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UseInventoryItem3"",
+                    ""type"": ""Button"",
+                    ""id"": ""e8a7edf8-61f1-4143-be4c-1d438534ae64"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UseInventoryItem4"",
+                    ""type"": ""Button"",
+                    ""id"": ""5c74d8d2-c7bb-4acd-aaa5-ff0163269392"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UseInventoryItem5"",
+                    ""type"": ""Button"",
+                    ""id"": ""362e06f4-737e-4fd1-b5e4-24ea889302ac"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1135,6 +1162,39 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""action"": ""Click1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e5582f0d-8f81-4b3a-92de-2cfccd3468e7"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UseInventoryItem3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4bf68c51-cfae-43bd-b724-59715cc2f834"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UseInventoryItem4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e62561f4-3bf4-477b-b666-5e2171c7e3f3"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UseInventoryItem5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1228,6 +1288,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_UI_UseInventoryItem1 = m_UI.FindAction("UseInventoryItem1", throwIfNotFound: true);
         m_UI_UseInventoryItem2 = m_UI.FindAction("UseInventoryItem2", throwIfNotFound: true);
         m_UI_Click1 = m_UI.FindAction("Click1", throwIfNotFound: true);
+        m_UI_UseInventoryItem3 = m_UI.FindAction("UseInventoryItem3", throwIfNotFound: true);
+        m_UI_UseInventoryItem4 = m_UI.FindAction("UseInventoryItem4", throwIfNotFound: true);
+        m_UI_UseInventoryItem5 = m_UI.FindAction("UseInventoryItem5", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -1506,6 +1569,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_UseInventoryItem1;
     private readonly InputAction m_UI_UseInventoryItem2;
     private readonly InputAction m_UI_Click1;
+    private readonly InputAction m_UI_UseInventoryItem3;
+    private readonly InputAction m_UI_UseInventoryItem4;
+    private readonly InputAction m_UI_UseInventoryItem5;
     /// <summary>
     /// Provides access to input actions defined in input action map "UI".
     /// </summary>
@@ -1569,6 +1635,18 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "UI/Click1".
         /// </summary>
         public InputAction @Click1 => m_Wrapper.m_UI_Click1;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/UseInventoryItem3".
+        /// </summary>
+        public InputAction @UseInventoryItem3 => m_Wrapper.m_UI_UseInventoryItem3;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/UseInventoryItem4".
+        /// </summary>
+        public InputAction @UseInventoryItem4 => m_Wrapper.m_UI_UseInventoryItem4;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/UseInventoryItem5".
+        /// </summary>
+        public InputAction @UseInventoryItem5 => m_Wrapper.m_UI_UseInventoryItem5;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1634,6 +1712,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Click1.started += instance.OnClick1;
             @Click1.performed += instance.OnClick1;
             @Click1.canceled += instance.OnClick1;
+            @UseInventoryItem3.started += instance.OnUseInventoryItem3;
+            @UseInventoryItem3.performed += instance.OnUseInventoryItem3;
+            @UseInventoryItem3.canceled += instance.OnUseInventoryItem3;
+            @UseInventoryItem4.started += instance.OnUseInventoryItem4;
+            @UseInventoryItem4.performed += instance.OnUseInventoryItem4;
+            @UseInventoryItem4.canceled += instance.OnUseInventoryItem4;
+            @UseInventoryItem5.started += instance.OnUseInventoryItem5;
+            @UseInventoryItem5.performed += instance.OnUseInventoryItem5;
+            @UseInventoryItem5.canceled += instance.OnUseInventoryItem5;
         }
 
         /// <summary>
@@ -1684,6 +1771,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Click1.started -= instance.OnClick1;
             @Click1.performed -= instance.OnClick1;
             @Click1.canceled -= instance.OnClick1;
+            @UseInventoryItem3.started -= instance.OnUseInventoryItem3;
+            @UseInventoryItem3.performed -= instance.OnUseInventoryItem3;
+            @UseInventoryItem3.canceled -= instance.OnUseInventoryItem3;
+            @UseInventoryItem4.started -= instance.OnUseInventoryItem4;
+            @UseInventoryItem4.performed -= instance.OnUseInventoryItem4;
+            @UseInventoryItem4.canceled -= instance.OnUseInventoryItem4;
+            @UseInventoryItem5.started -= instance.OnUseInventoryItem5;
+            @UseInventoryItem5.performed -= instance.OnUseInventoryItem5;
+            @UseInventoryItem5.canceled -= instance.OnUseInventoryItem5;
         }
 
         /// <summary>
@@ -1951,5 +2047,26 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnClick1(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "UseInventoryItem3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUseInventoryItem3(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "UseInventoryItem4" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUseInventoryItem4(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "UseInventoryItem5" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUseInventoryItem5(InputAction.CallbackContext context);
     }
 }

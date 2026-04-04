@@ -596,6 +596,33 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "UseInventoryItem3",
+                    "type": "Button",
+                    "id": "e8a7edf8-61f1-4143-be4c-1d438534ae64",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UseInventoryItem4",
+                    "type": "Button",
+                    "id": "5c74d8d2-c7bb-4acd-aaa5-ff0163269392",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UseInventoryItem5",
+                    "type": "Button",
+                    "id": "362e06f4-737e-4fd1-b5e4-24ea889302ac",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1047,6 +1074,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "Click1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e5582f0d-8f81-4b3a-92de-2cfccd3468e7",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseInventoryItem3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4bf68c51-cfae-43bd-b724-59715cc2f834",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseInventoryItem4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e62561f4-3bf4-477b-b666-5e2171c7e3f3",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseInventoryItem5",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

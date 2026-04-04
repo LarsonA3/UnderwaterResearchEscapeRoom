@@ -60,7 +60,7 @@ public class Inventory : MonoBehaviour
     {
         if (slots[i].item == null)
         {
-            print("HEY! No item in slot " + (i+1));
+            //print("HEY! No item in slot " + (i+1));
         } else
         {
             slots[i].item.Use();
@@ -81,6 +81,22 @@ public class Inventory : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public void Remove(int i)
+    {
+        if (i < 0 || i >= slots.Count) return;
+        if (slots[i].item != null)
+        {
+            print("Removed item from slot " + (i + 1));
+
+            //clear data reference
+            slots[i].item = null;
+
+            //reset the UI
+            slots[i].img.sprite = null;
+            slots[i].img.gameObject.SetActive(false);
+        }
     }
 
 }

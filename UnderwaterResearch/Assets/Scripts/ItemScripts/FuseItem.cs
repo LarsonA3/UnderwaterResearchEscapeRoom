@@ -1,3 +1,4 @@
+using Tripolygon.UModelerX.Editor.Modelings;
 using UnityEngine;
 
 public class FuseItem : InventoryItem {
@@ -49,7 +50,17 @@ public class FuseItem : InventoryItem {
                 //if used on printer, add filament to printer (send message to call addFilament()) and remove from inventory
                 fusebox.addFuse(fuseColor);
                 print("Filament added to printer by filament item");
+
+                //remove from inventory
+                Inventory.Instance.Remove(Inventory.Instance.slots.IndexOf(Inventory.Instance.slots.Find(slot => slot.item == this)));
+
             }
         }
+    }
+
+    public void setColor(string clr)
+    {
+        fuseColor = clr;
+        print("set temp fuse color to " + clr);
     }
 }

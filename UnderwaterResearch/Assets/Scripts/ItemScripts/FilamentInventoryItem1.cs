@@ -18,6 +18,8 @@ public class FilamentInventoryItem : InventoryItem {
                 //if used on printer, add filament to printer (send message to call addFilament()) and remove from inventory
                 printer.AddFilament();
                 print("Filament added to printer by filament item");
+                //remove from inventory
+                Inventory.Instance.Remove(Inventory.Instance.slots.IndexOf(Inventory.Instance.slots.Find(slot => slot.item == this)));
             }
         }
     }

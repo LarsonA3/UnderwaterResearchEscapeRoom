@@ -3,9 +3,10 @@ using UnityEngine;
 
 public enum SoundType
 {
-    TUMBLE,
-    PICKUP,
-    WALKING,
+    SIREN,
+    PRINTER,
+    DOOR,
+    SUCCESS
 }
 
 public class SoundCollection
@@ -64,19 +65,20 @@ public class SoundManager : MonoBehaviour
     {
         Instance = this;
         audioSrc = GetComponent<AudioSource>();
+
+        // Mapping the 4 provided files to the new SoundTypes
         sounds = new() {
-      {SoundType.PICKUP, new SoundCollection("safe-door") },
-      {SoundType.TUMBLE, new SoundCollection("lock-turn") },
-      {SoundType.WALKING, new SoundCollection("walking") },
-    };
+            {SoundType.SIREN, new SoundCollection("siren") },     // siren.mp3
+            {SoundType.PRINTER, new SoundCollection("printer") }, // printer.wav
+            {SoundType.DOOR, new SoundCollection("door") },       // door.wav
+            {SoundType.SUCCESS, new SoundCollection("success") }, // success.mp3
+        };
     }
 
     public static void Play(SoundType type, AudioSource audioSrc = null, float pitch = -1)
     {
         if (Instance.sounds.ContainsKey(type))
         {
-            //var audioSrcToPlayFrom = extAudioSrc == null ? Instance.audioSrc : extAudioSrc;
-            //var audioSrcToPlayFrom = extAudioSrc ?? Instance.audioSrc;
             audioSrc ??= Instance.audioSrc;
             audioSrc.volume = Random.Range(0.7f, 1.0f) * Instance.mainVolume;
             audioSrc.pitch = pitch >= 0 ? pitch : Random.Range(0.75f, 1.25f);

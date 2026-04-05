@@ -15,6 +15,7 @@ public class FuseBox : MonoBehaviour
     private string secondslot = "";
     private string thirdslot = "";
 
+    public GameObject lightcontrol;
 
 
     private Renderer firstRen;
@@ -191,6 +192,7 @@ public class FuseBox : MonoBehaviour
             print("correct fuse combination!");
             Destroy(lockedDoor); //removes locked empty game object so door opens
             print("Unlocked main door");
+            lightcontrol.GetComponent<LightControlRoom1>().Done(); //turn lights back to normal
             done = true;
         }
     }

@@ -43,11 +43,11 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 0
-  m_Color: {r: 0.85323435, g: 0.99371064, b: 0.6968473, a: 1}
+  m_Color: {r: 1, g: 0.20507792, b: 0, a: 1}
   m_Intensity: 2.15
   m_Range: 10.34
-  m_SpotAngle: 153.71092
-  m_InnerSpotAngle: 109.18944
+  m_SpotAngle: 179
+  m_InnerSpotAngle: 170.76276
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 2
@@ -183,7 +183,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_d8e822a9-f6ae-4583-95df-e55b07065de8
+    name: UM_OperatedMesh_6cb35846-e18d-40d1-8794-473ff2ea8bb1
     skinnedMesh: 0
     sharedMesh: {fileID: 7805005285664727724}
     buidVersion:
@@ -196,7 +196,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: d8e822a9-f6ae-4583-95df-e55b07065de8
+  sourceMeshRendererGUID: 6cb35846-e18d-40d1-8794-473ff2ea8bb1
   guid: ecba6924-3430-4e74-8424-2fea7d207be2
   localOptions:
     RecalculateTangents: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
   materialsPath: []
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_6fbfb32c-73ff-48c3-8a82-1c96428419e2
+    name: UM_OperatedMesh_97f64eb7-b096-4829-a011-45b60d615142
     skinnedMesh: 0
     sharedMesh: {fileID: 8189017704604379537}
     buidVersion:
@@ -343,7 +343,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 6fbfb32c-73ff-48c3-8a82-1c96428419e2
+  sourceMeshRendererGUID: 97f64eb7-b096-4829-a011-45b60d615142
   guid: ecba6924-3430-4e74-8424-2fea7d207be2
   localOptions:
     RecalculateTangents: 0

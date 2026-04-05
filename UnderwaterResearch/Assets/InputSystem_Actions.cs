@@ -709,6 +709,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""QuitGame"",
+                    ""type"": ""Button"",
+                    ""id"": ""6d33af89-f5eb-4ded-b8d9-3f4df7038894"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1195,6 +1204,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""action"": ""UseInventoryItem5"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4107af74-08da-4db9-ae5f-7a3614457504"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""QuitGame"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1291,6 +1311,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_UI_UseInventoryItem3 = m_UI.FindAction("UseInventoryItem3", throwIfNotFound: true);
         m_UI_UseInventoryItem4 = m_UI.FindAction("UseInventoryItem4", throwIfNotFound: true);
         m_UI_UseInventoryItem5 = m_UI.FindAction("UseInventoryItem5", throwIfNotFound: true);
+        m_UI_QuitGame = m_UI.FindAction("QuitGame", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -1572,6 +1593,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_UseInventoryItem3;
     private readonly InputAction m_UI_UseInventoryItem4;
     private readonly InputAction m_UI_UseInventoryItem5;
+    private readonly InputAction m_UI_QuitGame;
     /// <summary>
     /// Provides access to input actions defined in input action map "UI".
     /// </summary>
@@ -1648,6 +1670,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @UseInventoryItem5 => m_Wrapper.m_UI_UseInventoryItem5;
         /// <summary>
+        /// Provides access to the underlying input action "UI/QuitGame".
+        /// </summary>
+        public InputAction @QuitGame => m_Wrapper.m_UI_QuitGame;
+        /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
         public InputActionMap Get() { return m_Wrapper.m_UI; }
@@ -1721,6 +1747,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @UseInventoryItem5.started += instance.OnUseInventoryItem5;
             @UseInventoryItem5.performed += instance.OnUseInventoryItem5;
             @UseInventoryItem5.canceled += instance.OnUseInventoryItem5;
+            @QuitGame.started += instance.OnQuitGame;
+            @QuitGame.performed += instance.OnQuitGame;
+            @QuitGame.canceled += instance.OnQuitGame;
         }
 
         /// <summary>
@@ -1780,6 +1809,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @UseInventoryItem5.started -= instance.OnUseInventoryItem5;
             @UseInventoryItem5.performed -= instance.OnUseInventoryItem5;
             @UseInventoryItem5.canceled -= instance.OnUseInventoryItem5;
+            @QuitGame.started -= instance.OnQuitGame;
+            @QuitGame.performed -= instance.OnQuitGame;
+            @QuitGame.canceled -= instance.OnQuitGame;
         }
 
         /// <summary>
@@ -2068,5 +2100,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnUseInventoryItem5(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "QuitGame" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnQuitGame(InputAction.CallbackContext context);
     }
 }

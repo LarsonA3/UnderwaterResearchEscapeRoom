@@ -1,0 +1,61 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LightControlRoom1 : MonoBehaviour
+{
+
+    private bool isDone = false;
+    Light[] lights;
+    private float speed = 1.0f;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        isDone = false;
+        lights = GetComponentsInChildren<Light>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (!isDone)
+        {
+            float temp= Mathf.PingPong(Time.time * speed, 1);
+            float curr = Mathf.Lerp(0.1f, 1.0f, temp);
+            foreach (Light l in lights)
+            {
+                l.intensity = curr;
+            }
+        }
+    }
+
+    public void Done()
+    {
+        //turn lights back to normal
+        isDone = true;
+        StartCoroutine(doneHelper());
+    }
+
+    private IEnumerator doneHelper() {
+        foreach (Light light in lights)
+        {
+            light.intensity = 1.0f;
+            light.color = new Color(0.855f, 0.992f, 0.698f);
+        }
+        for (int i = 0; i<10; i++)
+        {
+            foreach (Light light in lights)
+            {
+                light.enabled = false;
+            }
+            yield return new WaitForSeconds(0.25f);
+            foreach (Light light in lights)
+            {
+                light.enabled = true;
+            }
+        }
+
+
+    }
+}

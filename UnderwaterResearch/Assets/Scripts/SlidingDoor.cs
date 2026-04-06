@@ -24,7 +24,7 @@ public class SlidingDoor : MonoBehaviour
     DoorState state;
 
 
-    private void Awake()
+    private void Start()
     {
         state = DoorState.Closed;
         door = this.transform.Find("Door").gameObject; 
@@ -36,6 +36,10 @@ public class SlidingDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!this.transform.Find("Locked"))
+        {
+            locked = false;
+        }
         switch (state)
         {
             case DoorState.Open:

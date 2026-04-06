@@ -174,7 +174,7 @@ Transform:
   m_GameObject: {fileID: 1283790600739406977}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.39933002, y: 0.009379983, z: -0.30231}
+  m_LocalPosition: {x: 0.39933014, y: 0.009379983, z: -0.30231}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -201,9 +201,9 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: 
+    name: UM_OperatedMesh_3ea66a95-8647-4b16-8bd6-75d4cbaefe61
     skinnedMesh: 0
-    sharedMesh: {fileID: 0}
+    sharedMesh: {fileID: -4957987538464019023}
     buidVersion:
       ModifierGUID: 
       PosVersion: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: c8ecc842-6160-4e1a-8fcc-ed53756185a2
+  sourceMeshRendererGUID: 3ea66a95-8647-4b16-8bd6-75d4cbaefe61
   guid: 2aeae69b-b219-4fa8-948f-97d7372169f8
   localOptions:
     RecalculateTangents: 0
@@ -229,8 +229,8 @@ MonoBehaviour:
     packMargin: 0
   hotspotObject: {fileID: 0}
   saveData: {fileID: -1451624141845883035}
-  IsSaveDataLoaded: 0
-  <IsDirtySaveData>k__BackingField: 0
+  IsSaveDataLoaded: 1
+  <IsDirtySaveData>k__BackingField: 1
   texturePaintData:
   - {fileID: 0}
   modifierStack:
@@ -716,8 +716,8 @@ Transform:
   m_GameObject: {fileID: 7998774473918088547}
   serializedVersion: 2
   m_LocalRotation: {x: 0.11120521, y: -0, z: -0, w: 0.99379754}
-  m_LocalPosition: {x: -0.12426996, y: 0.40581727, z: -0.94994307}
-  m_LocalScale: {x: 1, y: 1, z: 0.23755002}
+  m_LocalPosition: {x: -0.12426996, y: 0.40581727, z: -0.94994354}
+  m_LocalScale: {x: 1, y: 1, z: 0.23755004}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2718059304268005133}
@@ -744,9 +744,9 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: 
+    name: UM_OperatedMesh_6fa81d21-0825-4e05-bba5-e7e43b1d28d1
     skinnedMesh: 0
-    sharedMesh: {fileID: 0}
+    sharedMesh: {fileID: -6614834782652829138}
     buidVersion:
       ModifierGUID: 
       PosVersion: 0
@@ -757,7 +757,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: f99ee787-42e0-40f2-ae73-3893fa6873c3
+  sourceMeshRendererGUID: 6fa81d21-0825-4e05-bba5-e7e43b1d28d1
   guid: e6702a98-48cf-4552-b2c1-1db47863aa9b
   localOptions:
     RecalculateTangents: 0
@@ -773,7 +773,7 @@ MonoBehaviour:
   hotspotObject: {fileID: 0}
   saveData: {fileID: 1500303502766014864}
   IsSaveDataLoaded: 0
-  <IsDirtySaveData>k__BackingField: 0
+  <IsDirtySaveData>k__BackingField: 1
   texturePaintData:
   - {fileID: 0}
   modifierStack:

@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayButton : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Start is called once before the first execution of Update after the MonoBehaviour is u
     void Start()
     {
         Cursor.visible = true;
@@ -20,4 +20,6 @@ public class PlayButton : MonoBehaviour
     {
         SceneManager.LoadScene("UnderwaterGame");
     }
+
+
 }

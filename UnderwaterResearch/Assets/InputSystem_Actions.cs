@@ -718,6 +718,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CheatCodeDeath"",
+                    ""type"": ""Button"",
+                    ""id"": ""0f689ff4-c9db-45f9-ae80-ef1a745854de"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1215,6 +1224,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""action"": ""QuitGame"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""71fd2dbf-75d2-47cb-b88a-2dc4115d8f02"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CheatCodeDeath"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1312,6 +1332,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_UI_UseInventoryItem4 = m_UI.FindAction("UseInventoryItem4", throwIfNotFound: true);
         m_UI_UseInventoryItem5 = m_UI.FindAction("UseInventoryItem5", throwIfNotFound: true);
         m_UI_QuitGame = m_UI.FindAction("QuitGame", throwIfNotFound: true);
+        m_UI_CheatCodeDeath = m_UI.FindAction("CheatCodeDeath", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -1594,6 +1615,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_UseInventoryItem4;
     private readonly InputAction m_UI_UseInventoryItem5;
     private readonly InputAction m_UI_QuitGame;
+    private readonly InputAction m_UI_CheatCodeDeath;
     /// <summary>
     /// Provides access to input actions defined in input action map "UI".
     /// </summary>
@@ -1674,6 +1696,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @QuitGame => m_Wrapper.m_UI_QuitGame;
         /// <summary>
+        /// Provides access to the underlying input action "UI/CheatCodeDeath".
+        /// </summary>
+        public InputAction @CheatCodeDeath => m_Wrapper.m_UI_CheatCodeDeath;
+        /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
         public InputActionMap Get() { return m_Wrapper.m_UI; }
@@ -1750,6 +1776,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @QuitGame.started += instance.OnQuitGame;
             @QuitGame.performed += instance.OnQuitGame;
             @QuitGame.canceled += instance.OnQuitGame;
+            @CheatCodeDeath.started += instance.OnCheatCodeDeath;
+            @CheatCodeDeath.performed += instance.OnCheatCodeDeath;
+            @CheatCodeDeath.canceled += instance.OnCheatCodeDeath;
         }
 
         /// <summary>
@@ -1812,6 +1841,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @QuitGame.started -= instance.OnQuitGame;
             @QuitGame.performed -= instance.OnQuitGame;
             @QuitGame.canceled -= instance.OnQuitGame;
+            @CheatCodeDeath.started -= instance.OnCheatCodeDeath;
+            @CheatCodeDeath.performed -= instance.OnCheatCodeDeath;
+            @CheatCodeDeath.canceled -= instance.OnCheatCodeDeath;
         }
 
         /// <summary>
@@ -2107,5 +2139,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnQuitGame(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "CheatCodeDeath" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnCheatCodeDeath(InputAction.CallbackContext context);
     }
 }

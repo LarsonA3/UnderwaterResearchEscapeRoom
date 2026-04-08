@@ -39,7 +39,7 @@ public class Printer : MonoBehaviour
 
         //remove hitbox
         this.GetComponent<BoxCollider>().enabled = false;
-        Instantiate(MultiToolprefab, MultiToolprefab.transform.position, Quaternion.identity);
+        Instantiate(MultiToolprefab, transform.Find("SpawnLocationMultitool").position, Quaternion.identity);
         print("Printer is done Printing!");
     }
 

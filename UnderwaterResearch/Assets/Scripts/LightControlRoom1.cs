@@ -55,6 +55,7 @@ public class LightControlRoom1 : MonoBehaviour
         //CHEAT CODE TO DEATH
         if (input.UI.CheatCodeDeath.WasPressedThisFrame()) 
         {
+            print("CHEAT CODE ACTIVATED - PLAYER DEATH");
             PlayerDeath();
         }
     }

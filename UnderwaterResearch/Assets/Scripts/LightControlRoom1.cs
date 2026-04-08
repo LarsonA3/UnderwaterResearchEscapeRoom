@@ -9,6 +9,7 @@ public class LightControlRoom1 : MonoBehaviour
     Light[] lights;
     private float speed = 1.0f;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,6 +43,9 @@ public class LightControlRoom1 : MonoBehaviour
         {
             light.intensity = 1.0f;
             light.color = new Color(0.855f, 0.992f, 0.698f);
+            //set object to change from red to white
+            var visualObjren = light.gameObject.transform.parent.GetComponent<Renderer>();
+            visualObjren.material.SetColor("_BaseColor", Color.white);
         }
         for (int i = 0; i<10; i++)
         {

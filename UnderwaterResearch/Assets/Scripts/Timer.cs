@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
     private int TimeLimit = 240; //4 mins time limit
     private int currentTime;
 
-    private bool failed = false;
+    //private bool failed = false;
 
     public GameObject lightref; // set in inspector
 
@@ -40,7 +40,7 @@ public class Timer : MonoBehaviour
             text.text = currentTime.ToString();
         }
         
-        failed = true;
+        //failed = true;
         //set time to 0
         currentTime = 0;
         text.text = "0";

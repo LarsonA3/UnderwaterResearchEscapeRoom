@@ -51,12 +51,12 @@ MonoBehaviour:
   isPaintingEnabled: 0
   currentEditor: 
   materials:
-  - {fileID: 2100000, guid: 4b90102600364114f844f1006947d9de, type: 2}
+  - {fileID: 2100000, guid: 5afaf75fcaf2aa043a5dcb91a9a98cfd, type: 2}
   materialsPath:
   - Assets/Materials/LIGHT.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_1e3214a0-bc17-48ce-89f5-21a7bbe446f7
+    name: UM_OperatedMesh_a198e75c-9173-45ac-bfff-f2777b4aa938
     skinnedMesh: 0
     sharedMesh: {fileID: 7805005285664727724}
     buidVersion:
@@ -69,7 +69,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 1e3214a0-bc17-48ce-89f5-21a7bbe446f7
+  sourceMeshRendererGUID: a198e75c-9173-45ac-bfff-f2777b4aa938
   guid: ecba6924-3430-4e74-8424-2fea7d207be2
   localOptions:
     RecalculateTangents: 0
@@ -124,7 +124,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4b90102600364114f844f1006947d9de, type: 2}
+  - {fileID: 2100000, guid: 5afaf75fcaf2aa043a5dcb91a9a98cfd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -203,7 +203,7 @@ MonoBehaviour:
   materialsPath: []
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_f678023d-7da7-4ad6-a0f2-ae812352adc0
+    name: UM_OperatedMesh_4e5f499d-7dbf-48c8-9462-926b3f99ae70
     skinnedMesh: 0
     sharedMesh: {fileID: 8189017704604379537}
     buidVersion:
@@ -216,7 +216,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: f678023d-7da7-4ad6-a0f2-ae812352adc0
+  sourceMeshRendererGUID: 4e5f499d-7dbf-48c8-9462-926b3f99ae70
   guid: ecba6924-3430-4e74-8424-2fea7d207be2
   localOptions:
     RecalculateTangents: 0

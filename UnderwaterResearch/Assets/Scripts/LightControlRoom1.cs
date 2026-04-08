@@ -1,3 +1,4 @@
+using NUnit.Framework.Constraints;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class LightControlRoom1 : MonoBehaviour
     private bool isDone = false;
     Light[] lights;
     private float speed = 1.0f;
+    private bool isdeath = false;
 
     private InputSystem_Actions input;
 
@@ -79,6 +81,7 @@ public class LightControlRoom1 : MonoBehaviour
     {
         //turn lights red and make them flicker
         isDone = true;
+        isdeath = true;
         print("PLAYER IS GOING TO DIE - PLAYER DEATH CALLED");
         foreach (Light light in lights)
         {
@@ -96,5 +99,11 @@ public class LightControlRoom1 : MonoBehaviour
             SceneManager.LoadScene("LoseScreen");
 
         }
+    }
+
+    public bool isDead()
+    {
+        if (isdeath) {return true;}
+        else { return false; }
     }
 }

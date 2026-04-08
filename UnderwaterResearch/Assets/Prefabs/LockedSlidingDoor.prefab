@@ -158,7 +158,7 @@ MonoBehaviour:
   - Assets/Sprites/Materials/Pallette.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_f541ce9f-f8e2-4f9a-86a2-e722788c9631
+    name: UM_OperatedMesh_41f3851d-69ad-4051-a391-e85838423755
     skinnedMesh: 0
     sharedMesh: {fileID: -8528393470377599038}
     buidVersion:
@@ -171,7 +171,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: f541ce9f-f8e2-4f9a-86a2-e722788c9631
+  sourceMeshRendererGUID: 41f3851d-69ad-4051-a391-e85838423755
   guid: 3d867b9c-c30b-4ff1-9fd0-576f4119941e
   localOptions:
     RecalculateTangents: 0
@@ -306,9 +306,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -341,7 +341,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

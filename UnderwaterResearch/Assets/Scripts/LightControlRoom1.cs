@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
+//handles ceiling lights and player death
 public class LightControlRoom1 : MonoBehaviour
 {
 
@@ -9,15 +11,19 @@ public class LightControlRoom1 : MonoBehaviour
     Light[] lights;
     private float speed = 1.0f;
 
+    private InputSystem_Actions input;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Awake()
+    {
+        input = new InputSystem_Actions();
+        input.Enable();
+    }
     void Start()
     {
         isDone = false;
         lights = GetComponentsInChildren<Light>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!isDone)
@@ -28,6 +34,12 @@ public class LightControlRoom1 : MonoBehaviour
             {
                 l.intensity = curr;
             }
+        }
+
+        //CHEAT CODE TO DEATH
+        if (input.UI.CheatCodeDeath.WasPressedThisFrame()) 
+        {
+            PlayerDeath();
         }
     }
 
@@ -61,5 +73,28 @@ public class LightControlRoom1 : MonoBehaviour
         }
 
 
+    }
+
+    public void PlayerDeath()
+    {
+        //turn lights red and make them flicker
+        isDone = true;
+        print("PLAYER IS GOING TO DIE - PLAYER DEATH CALLED");
+        foreach (Light light in lights)
+        {
+            //turns lights red and color of object red
+            light.color = Color.red;
+            var visualObjren = light.gameObject.transform.parent.GetComponent<Renderer>();
+            visualObjren.material.SetColor("_BaseColor", Color.red);
+
+
+            //you lose screen
+
+
+            //screen shake
+
+            SceneManager.LoadScene("LoseScreen");
+
+        }
     }
 }

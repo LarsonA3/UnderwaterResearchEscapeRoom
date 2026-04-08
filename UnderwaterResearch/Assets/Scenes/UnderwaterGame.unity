@@ -606,51 +606,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2577917500926983481, guid: 7d031d163def34240a3c1aab6887ed08, type: 3}
   m_PrefabInstance: {fileID: 863423491}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &402333491
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 402333493}
-  - component: {fileID: 402333492}
-  m_Layer: 0
-  m_Name: cc8f6cbe-afea-419e-bfc4-90db6b577033
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &402333492
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402333491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &402333493
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402333491}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &428155917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -720,51 +675,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74ce265690eee3b48a6a71df258b35ca, type: 3}
---- !u!1 &604914870
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 604914872}
-  - component: {fileID: 604914871}
-  m_Layer: 0
-  m_Name: 6a61d380-c65e-48b1-9279-6a111869ffc9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &604914871
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604914870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &604914872
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604914870}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &650446937 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6542133890971378077, guid: 495538d34697f75458c3a101747af90d, type: 3}
@@ -944,7 +854,7 @@ Transform:
   m_GameObject: {fileID: 815014595}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7081808, w: 0.7060312}
-  m_LocalPosition: {x: 0.439, y: -0.485, z: 0.4499998}
+  m_LocalPosition: {x: 0.439, y: -0.466, z: 0.4499998}
   m_LocalScale: {x: 0.31178904, y: 0.60701, z: 0.3287383}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1028,7 +938,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_141523a3-8238-44f1-80d1-3373959385d7
+    name: UM_OperatedMesh_7ccae154-4a18-448f-a0c6-4b7686cb866a
     skinnedMesh: 0
     sharedMesh: {fileID: 1003182691}
     buidVersion:
@@ -1041,7 +951,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 141523a3-8238-44f1-80d1-3373959385d7
+  sourceMeshRendererGUID: 7ccae154-4a18-448f-a0c6-4b7686cb866a
   guid: 77298c1d-cdeb-45d8-99b5-907a64894341
   localOptions:
     RecalculateTangents: 0
@@ -1784,51 +1694,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
---- !u!1 &1391594188
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1391594190}
-  - component: {fileID: 1391594189}
-  m_Layer: 0
-  m_Name: 1828b55f-7856-4f28-b237-9495573dc0ee
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1391594189
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391594188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &1391594190
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391594188}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1396067891 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1260975797725458596, guid: 495538d34697f75458c3a101747af90d, type: 3}
@@ -1867,7 +1732,7 @@ Transform:
   m_GameObject: {fileID: 1445268912}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7081808, w: 0.7060312}
-  m_LocalPosition: {x: 0.43832684, y: -0.23870838, z: 0.4499998}
+  m_LocalPosition: {x: 0.438, y: -0.215, z: 0.4499998}
   m_LocalScale: {x: 0.31178904, y: 0.60701, z: 0.3287383}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1951,7 +1816,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_0eae4b64-bfa9-4827-8546-03cf6cd69cdf
+    name: UM_OperatedMesh_06b06556-c29c-4164-b536-4e835b39f2d0
     skinnedMesh: 0
     sharedMesh: {fileID: 1038491265}
     buidVersion:
@@ -1964,7 +1829,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 0eae4b64-bfa9-4827-8546-03cf6cd69cdf
+  sourceMeshRendererGUID: 06b06556-c29c-4164-b536-4e835b39f2d0
   guid: 77298c1d-cdeb-45d8-99b5-907a64894341
   localOptions:
     RecalculateTangents: 0
@@ -1997,51 +1862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
---- !u!1 &1577766602
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1577766604}
-  - component: {fileID: 1577766603}
-  m_Layer: 0
-  m_Name: e2290528-bf54-48ff-aaa2-45cf5f6c9972
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1577766603
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577766602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &1577766604
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577766602}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1596359124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,7 +1902,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_930cd698-59e8-4bc6-aafd-53d1e0f287c4
+    name: UM_OperatedMesh_112ddb7a-eb30-4078-a67d-64c42f735824
     skinnedMesh: 0
     sharedMesh: {fileID: 165452793}
     buidVersion:
@@ -2095,7 +1915,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 930cd698-59e8-4bc6-aafd-53d1e0f287c4
+  sourceMeshRendererGUID: 112ddb7a-eb30-4078-a67d-64c42f735824
   guid: 77298c1d-cdeb-45d8-99b5-907a64894341
   localOptions:
     RecalculateTangents: 0
@@ -2183,7 +2003,7 @@ Transform:
   m_GameObject: {fileID: 1596359124}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7081808, w: 0.7060312}
-  m_LocalPosition: {x: 0.44, y: -0.722, z: 0.4499998}
+  m_LocalPosition: {x: 0.44, y: -0.732, z: 0.4499998}
   m_LocalScale: {x: 0.31178904, y: 0.60701, z: 0.3287383}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3073,7 +2893,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 90769734728963140, guid: 1fdae532824125645a8085bb4e05e432, type: 3}
       propertyPath: m_Name
-      value: '[[ LightControl ]]'
+      value: '[[ LightControl ALL ROOMS]]'
       objectReference: {fileID: 0}
     - target: {fileID: 2325273576069850260, guid: 1fdae532824125645a8085bb4e05e432, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3134,7 +2954,3 @@ SceneRoots:
   - {fileID: 1942144393}
   - {fileID: 810239043}
   - {fileID: 331728583}
-  - {fileID: 402333493}
-  - {fileID: 1391594190}
-  - {fileID: 604914872}
-  - {fileID: 1577766604}

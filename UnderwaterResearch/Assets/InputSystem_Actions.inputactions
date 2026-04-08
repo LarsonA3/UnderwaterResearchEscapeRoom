@@ -632,6 +632,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "CheatCodeDeath",
+                    "type": "Button",
+                    "id": "0f689ff4-c9db-45f9-ae80-ef1a745854de",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1127,6 +1136,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "QuitGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "71fd2dbf-75d2-47cb-b88a-2dc4115d8f02",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CheatCodeDeath",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -64,6 +64,7 @@ public class LightControlRoom1 : MonoBehaviour
     {
         //turn lights back to normal
         isDone = true;
+        this.transform.parent.parent.GetComponent<AudioSource>().Play();
         StartCoroutine(doneHelper());
     }
 

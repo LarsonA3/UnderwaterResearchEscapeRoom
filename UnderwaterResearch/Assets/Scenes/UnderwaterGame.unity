@@ -3268,7 +3268,7 @@ PrefabInstance:
     - target: {fileID: 8007737413333252516, guid: 7d031d163def34240a3c1aab6887ed08, type: 3}
       propertyPath: sprHud
       value: 
-      objectReference: {fileID: -1974883580, guid: 44cb2fdf49ee5d74d992fe064d600835, type: 3}
+      objectReference: {fileID: 21300000, guid: 4b0f8f77834ebc14ab298bf17f62bc0c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4355,7 +4355,7 @@ PrefabInstance:
     - target: {fileID: 8007737413333252516, guid: 7d031d163def34240a3c1aab6887ed08, type: 3}
       propertyPath: sprHud
       value: 
-      objectReference: {fileID: 21300000, guid: e86b2b25e78ff4e619893a5857c6231e, type: 3}
+      objectReference: {fileID: 21300000, guid: 4b0f8f77834ebc14ab298bf17f62bc0c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4432,6 +4432,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1260975797725458596, guid: 495538d34697f75458c3a101747af90d, type: 3}
   m_PrefabInstance: {fileID: 867207691}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &867441950
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 867441952}
+  - component: {fileID: 867441951}
+  m_Layer: 0
+  m_Name: 75049cbd-f0f9-4fae-9e2f-3bdb87e0bb28
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &867441951
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867441950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &867441952
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867441950}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &872391130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5730,7 +5775,7 @@ PrefabInstance:
     - target: {fileID: 8007737413333252516, guid: 7d031d163def34240a3c1aab6887ed08, type: 3}
       propertyPath: sprHud
       value: 
-      objectReference: {fileID: 21300000, guid: e86b2b25e78ff4e619893a5857c6231e, type: 3}
+      objectReference: {fileID: 21300000, guid: 4b0f8f77834ebc14ab298bf17f62bc0c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6275,10 +6320,10 @@ MonoBehaviour:
   BoxDoorAnimator: {fileID: 26399661}
   lockedDoor: {fileID: 650446937}
   lightcontrol: {fileID: 2099430548}
-  redFuseSprite: {fileID: 21300000, guid: e86b2b25e78ff4e619893a5857c6231e, type: 3}
-  blueFuseSprite: {fileID: 21300000, guid: 5f7697e57322742198159eacdfbfbd92, type: 3}
-  yellowFuseSprite: {fileID: 21300000, guid: 62047cb607859459da6146564aaf516a, type: 3}
-  greenFuseSprite: {fileID: 21300000, guid: e86b2b25e78ff4e619893a5857c6231e, type: 3}
+  redFuseSprite: {fileID: 21300000, guid: 4b0f8f77834ebc14ab298bf17f62bc0c, type: 3}
+  blueFuseSprite: {fileID: 21300000, guid: 4b0f8f77834ebc14ab298bf17f62bc0c, type: 3}
+  yellowFuseSprite: {fileID: 21300000, guid: 4b0f8f77834ebc14ab298bf17f62bc0c, type: 3}
+  greenFuseSprite: {fileID: 21300000, guid: 4b0f8f77834ebc14ab298bf17f62bc0c, type: 3}
 --- !u!65 &1219282679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8800,7 +8845,7 @@ PrefabInstance:
     - target: {fileID: 8007737413333252516, guid: 7d031d163def34240a3c1aab6887ed08, type: 3}
       propertyPath: sprHud
       value: 
-      objectReference: {fileID: 21300000, guid: 0f51a1fb2d75643b8974dbc3db4ee025, type: 3}
+      objectReference: {fileID: 21300000, guid: 4b0f8f77834ebc14ab298bf17f62bc0c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11648,3 +11693,4 @@ SceneRoots:
   - {fileID: 677353185}
   - {fileID: 636371929}
   - {fileID: 1647992532}
+  - {fileID: 867441952}

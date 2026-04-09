@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class FuseBox : MonoBehaviour
 {
     private bool opened = false; //CANNOT INTERACT W FUSES BEFOR THIS IS TRUE
@@ -47,17 +47,29 @@ public class FuseBox : MonoBehaviour
     {
         if (!opened)
         {
-            Destroy(boxDoor);
-            opened = true;
+            boxDoor.GetComponent<AudioSource>().Play();
 
+            StartCoroutine(DestroyDoor());
             //set up fuse slots
         }
     }
+
+
+    private IEnumerator DestroyDoor() 
+    {
+        yield return new WaitForSeconds(1f); //wait for 1 second before destroying the door
+        Destroy(boxDoor);
+        opened = true;
+    }
+
+
+
 
     public void addFuse(string color)
     {
         if (opened && !done)
         {
+            this.gameObject.GetComponent<AudioSource>().Play();
             if (firstslot == "")
             {
                 firstslot = color;
@@ -125,6 +137,7 @@ public class FuseBox : MonoBehaviour
     {
         if (opened == true && !done)
         {
+            this.gameObject.GetComponent<AudioSource>().Play();
             //remove fuse from slot and add back to inventory
             if (thirdslot != "")
             {

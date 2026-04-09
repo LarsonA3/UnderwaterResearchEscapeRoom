@@ -76,13 +76,13 @@ public class SlidingDoor : MonoBehaviour
         switch (state)
         {
             case DoorState.Open:
-                if (newstate == DoorState.Closing) { state = newstate; print("Door Closing"); }
+                if (newstate == DoorState.Closing) { state = newstate; print("Door Closing"); door.GetComponent<AudioSource>().Play(); }
                 break;
             case DoorState.Closing:
                 if (newstate == DoorState.Closed) { state = newstate; }
                 break;
             case DoorState.Closed:
-                if (newstate == DoorState.Opening && locked == false) { state = newstate; print("Door opening"); }
+                if (newstate == DoorState.Opening && locked == false) { state = newstate; print("Door opening"); door.GetComponent<AudioSource>().Play(); }
                 break;
             case DoorState.Opening:
                 if (newstate == DoorState.Open) { state = newstate; }

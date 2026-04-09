@@ -641,6 +641,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "CheatCodeUnlock",
+                    "type": "Button",
+                    "id": "a96db41d-efc5-48ba-9663-8110f62e25cf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1147,6 +1156,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "CheatCodeDeath",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "28a45bd5-08bf-4697-a67d-8b165b09eea3",
+                    "path": "<Keyboard>/o",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CheatCodeUnlock",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

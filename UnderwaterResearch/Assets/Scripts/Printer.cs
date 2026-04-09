@@ -27,6 +27,7 @@ public class Printer : MonoBehaviour
         filamentVisual.SetActive(true);
 
         StartCoroutine(PrintMultitool());
+        this.GetComponent<AudioSource>().Play(); // play sound effect
 
     }
 

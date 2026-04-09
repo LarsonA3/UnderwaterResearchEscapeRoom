@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UnderwaterGame.unity
     guid: 0fdfd708f5370d240af81be2b9c1959d
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: ff632f1188da52f4c84dffd120f3b823
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 47122a92f3ebbb445a595812a433179e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -18,6 +18,7 @@ public class PlayButton : MonoBehaviour
 
     public void ClickPlayButton()
     {
+        print("Play button pressed");
         SceneManager.LoadScene("UnderwaterGame");
     }
 

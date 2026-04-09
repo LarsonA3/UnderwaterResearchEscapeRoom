@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87a40a0c4d17cd341bb4cd3b131ae0f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MultiTool
-  sprHud: {fileID: 21300000, guid: 0a77f40f98d294bfe973eec4a1833a71, type: 3}
+  sprHud: {fileID: 21300000, guid: 801547dc20732a84fbf9b964bbf0bfed, type: 3}
   reachDistance: 3
 --- !u!114 &-2728912925335594160
 MonoBehaviour:

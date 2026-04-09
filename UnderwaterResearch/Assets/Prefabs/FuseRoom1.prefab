@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56d4b0a53253a2e45b3ba00a7c888284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FuseItem
-  sprHud: {fileID: 0}
+  sprHud: {fileID: 21300000, guid: 4b0f8f77834ebc14ab298bf17f62bc0c, type: 3}
   reachDistance: 3
 --- !u!65 &8971476512338321327
 BoxCollider:

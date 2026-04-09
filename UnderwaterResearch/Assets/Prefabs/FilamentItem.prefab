@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3844866bf123e264e83c842b9a5ec134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FilamentInventoryItem
-  sprHud: {fileID: 21300000, guid: 5f7697e57322742198159eacdfbfbd92, type: 3}
+  sprHud: {fileID: 21300000, guid: ea3bf39c352522a499f331975239a01f, type: 3}
   reachDistance: 3
 --- !u!65 &7043486637625287430
 BoxCollider:

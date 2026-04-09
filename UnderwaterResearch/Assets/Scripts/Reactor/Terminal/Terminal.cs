@@ -146,10 +146,7 @@ public class Terminal : MonoBehaviour
             foreach (var go in deactivateOnWin)
                 if (go != null) go.SetActive(false);
 
-        if (reactorCore != null) {
-            reactorCore.SetCoreBlue();
-            reactorCore.SetLightColor(Color.cyan);
-        }
+        if (reactorCore != null) reactorCore.SetCoreBlue();
     }
 
     public void Grab() {

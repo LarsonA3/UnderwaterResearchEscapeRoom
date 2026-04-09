@@ -16,6 +16,5 @@ public class TerminalInteract : MonoBehaviour
     terminalUI.SetActive(true);
     Cursor.visible = true;
     Cursor.lockState = CursorLockMode.None;
-    Debug.Log("Terminal opened!");
   }
 }

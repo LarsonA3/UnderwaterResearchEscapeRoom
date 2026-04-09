@@ -98,7 +98,6 @@ public class TerminalCodePad : MonoBehaviour
 		displayText.text = "CORRECT";
 		displayText.color = new Color(0f, 1f, 0.12f);
 		displayText.fontSize = 130;
-		Debug.Log("Code accepted! Trigger unlock.");
 		StartCoroutine(CloseAfterDelay());
 	}
 

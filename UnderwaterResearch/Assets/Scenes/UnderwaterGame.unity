@@ -2288,6 +2288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glass (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8569276590160421235, guid: a8dd1d6538e8a07448ca54d3f2006df6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 93ff29be4f024dc4ab723356fbdcdcd4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10176,6 +10180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glass (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8569276590160421235, guid: a8dd1d6538e8a07448ca54d3f2006df6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 93ff29be4f024dc4ab723356fbdcdcd4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -10,7 +10,7 @@ public class InventorySlot
 {
     // set in inspector
     public Image img;
-
+    public Sprite placeholderSprite;
     [HideInInspector] public InventoryItem item;
 }
 
@@ -89,13 +89,8 @@ public class Inventory : MonoBehaviour
         if (slots[i].item != null)
         {
             print("Removed item from slot " + (i + 1));
-
-            //clear data reference
             slots[i].item = null;
-
-            //reset the UI
-            slots[i].img.sprite = null;
-            slots[i].img.gameObject.SetActive(false);
+            slots[i].img.sprite = slots[i].placeholderSprite;
         }
     }
 

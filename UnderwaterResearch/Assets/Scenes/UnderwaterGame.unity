@@ -2287,6 +2287,51 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2123100852354575826, guid: 2ad89b0e79bd44593888a5aa7a104ba9, type: 3}
   m_PrefabInstance: {fileID: 1929652374}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &506830196
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 506830198}
+  - component: {fileID: 506830197}
+  m_Layer: 0
+  m_Name: edf2b3a4-17c0-40e5-87ea-4d8b9177133e
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &506830197
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506830196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &506830198
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506830196}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519545699
 GameObject:
   m_ObjectHideFlags: 0
@@ -4432,51 +4477,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1260975797725458596, guid: 495538d34697f75458c3a101747af90d, type: 3}
   m_PrefabInstance: {fileID: 867207691}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &867441950
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 867441952}
-  - component: {fileID: 867441951}
-  m_Layer: 0
-  m_Name: 75049cbd-f0f9-4fae-9e2f-3bdb87e0bb28
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &867441951
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867441950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &867441952
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867441950}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &872391130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8086,51 +8086,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4649335905073175050, guid: 6717126a212642a4da568a5c564a44f6, type: 3}
   m_PrefabInstance: {fileID: 1633714531}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1647992530
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1647992532}
-  - component: {fileID: 1647992531}
-  m_Layer: 0
-  m_Name: 2363038f-09d5-4b3f-9a2b-6120d3e349fa
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1647992531
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647992530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &1647992532
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647992530}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1653122967 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2577917500926983481, guid: 7d031d163def34240a3c1aab6887ed08, type: 3}
@@ -11201,6 +11156,26 @@ PrefabInstance:
       propertyPath: slots.Array.data[4].img
       value: 
       objectReference: {fileID: 345015566}
+    - target: {fileID: 5960049050143995191, guid: 60c24bc254b5ae34d9c3fd6b043ce988, type: 3}
+      propertyPath: slots.Array.data[0].placeholderSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 846ee08038be5a240866a2827e5c38e3, type: 3}
+    - target: {fileID: 5960049050143995191, guid: 60c24bc254b5ae34d9c3fd6b043ce988, type: 3}
+      propertyPath: slots.Array.data[1].placeholderSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 846ee08038be5a240866a2827e5c38e3, type: 3}
+    - target: {fileID: 5960049050143995191, guid: 60c24bc254b5ae34d9c3fd6b043ce988, type: 3}
+      propertyPath: slots.Array.data[2].placeholderSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 846ee08038be5a240866a2827e5c38e3, type: 3}
+    - target: {fileID: 5960049050143995191, guid: 60c24bc254b5ae34d9c3fd6b043ce988, type: 3}
+      propertyPath: slots.Array.data[3].placeholderSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 846ee08038be5a240866a2827e5c38e3, type: 3}
+    - target: {fileID: 5960049050143995191, guid: 60c24bc254b5ae34d9c3fd6b043ce988, type: 3}
+      propertyPath: slots.Array.data[4].placeholderSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 846ee08038be5a240866a2827e5c38e3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11692,5 +11667,4 @@ SceneRoots:
   - {fileID: 1009546125}
   - {fileID: 677353185}
   - {fileID: 636371929}
-  - {fileID: 1647992532}
-  - {fileID: 867441952}
+  - {fileID: 506830198}

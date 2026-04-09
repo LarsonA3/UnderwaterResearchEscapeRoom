@@ -4,6 +4,7 @@ public class FuseBox : MonoBehaviour
 {
     private bool opened = false; //CANNOT INTERACT W FUSES BEFOR THIS IS TRUE
     private GameObject boxDoor;
+    public Animator BoxDoorAnimator;
 
     public GameObject lockedDoor; //SET IN inspector, door to be unlocked
 
@@ -34,6 +35,7 @@ public class FuseBox : MonoBehaviour
     void Start()
     {
         boxDoor = transform.Find("Door").gameObject;
+        BoxDoorAnimator.enabled = false;
         slot1visual = this.gameObject.transform.Find("Slot1")?.gameObject;
         slot2visual = this.gameObject.transform.Find("Slot2")?.gameObject;
         slot3visual = this.gameObject.transform.Find("Slot3")?.gameObject;
@@ -47,9 +49,10 @@ public class FuseBox : MonoBehaviour
     {
         if (!opened)
         {
+            BoxDoorAnimator.enabled = true;
             boxDoor.GetComponent<AudioSource>().Play();
 
-            StartCoroutine(DestroyDoor());
+            //StartCoroutine(DestroyDoor());
             //set up fuse slots
         }
     }

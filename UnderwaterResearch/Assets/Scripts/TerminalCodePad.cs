@@ -20,6 +20,7 @@ public class TerminalCodePad : MonoBehaviour
   [SerializeField] private Renderer monitorScreen;
   [SerializeField] private Renderer[] tubeLights;
   [SerializeField] private Material correctMaterial;
+	public GameObject DoorLock;
 
   private string currentInput = "";
 	private Color originalDisplayColor;
@@ -105,11 +106,14 @@ public class TerminalCodePad : MonoBehaviour
     displayText.fontSize = 130;
     Debug.Log("Code accepted! Trigger unlock.");
 
-    if (monitorScreen != null)
+        Destroy(DoorLock);
+
+        if (monitorScreen != null)
       monitorScreen.material = correctMaterial;
 
     foreach (Renderer light in tubeLights)
       light.material = correctMaterial;
+
 
     StartCoroutine(CloseAfterDelay());
   }

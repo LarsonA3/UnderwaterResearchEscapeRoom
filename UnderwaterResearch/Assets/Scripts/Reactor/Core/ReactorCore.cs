@@ -10,6 +10,8 @@ public class ReactorCore : MonoBehaviour
     [SerializeField] private AudioSource reactorAudioSource;
     private float intensity = 0f;
     public GameObject reactor;
+    public GameObject doorLock1;
+    public GameObject doorLock2;
 
     public bool reactivated = false;
     private bool up = true;
@@ -43,6 +45,8 @@ public class ReactorCore : MonoBehaviour
             coreMesh.material = coreBlue; 
             reactivated = true;
             SetLightColor(Color.cyan);
+            Destroy(doorLock1);
+            Destroy(doorLock2);
             if (reactorAudioSource != null)
             {
                 reactorAudioSource.spatialBlend = 1.0f;

@@ -16,7 +16,12 @@ public class TerminalCodePad : MonoBehaviour
 	[SerializeField] private Color defaultUnderlineColor = Color.white;
 	[SerializeField] private Color filledUnderlineColor = new Color(0f, 1f, 0.12f);
 
-	private string currentInput = "";
+  [Header("Scene Objects")]
+  [SerializeField] private Renderer monitorScreen;
+  [SerializeField] private Renderer[] tubeLights;
+  [SerializeField] private Material correctMaterial;
+
+  private string currentInput = "";
 	private Color originalDisplayColor;
 
 	private void Start()
@@ -93,15 +98,23 @@ public class TerminalCodePad : MonoBehaviour
 			OnSubmitPressed();
 	}
 
-	private void OnCorrectCode()
-	{
-		displayText.text = "CORRECT";
-		displayText.color = new Color(0f, 1f, 0.12f);
-		displayText.fontSize = 130;
-		StartCoroutine(CloseAfterDelay());
-	}
+  private void OnCorrectCode()
+  {
+    displayText.text = "CORRECT";
+    displayText.color = new Color(0f, 1f, 0.12f);
+    displayText.fontSize = 130;
+    Debug.Log("Code accepted! Trigger unlock.");
 
-	private System.Collections.IEnumerator CloseAfterDelay()
+    if (monitorScreen != null)
+      monitorScreen.material = correctMaterial;
+
+    foreach (Renderer light in tubeLights)
+      light.material = correctMaterial;
+
+    StartCoroutine(CloseAfterDelay());
+  }
+
+  private System.Collections.IEnumerator CloseAfterDelay()
 	{
 		yield return new WaitForSeconds(1.5f);
 		displayText.gameObject.SetActive(false);

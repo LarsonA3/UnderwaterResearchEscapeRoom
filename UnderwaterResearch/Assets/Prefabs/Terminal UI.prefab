@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8824501799732614672}
@@ -55,6 +55,9 @@ MonoBehaviour:
   - {fileID: 5099174819152466682}
   defaultUnderlineColor: {r: 1, g: 1, b: 1, a: 1}
   filledUnderlineColor: {r: 0, g: 1, b: 0.12, a: 1}
+  monitorScreen: {fileID: 0}
+  tubeLights: []
+  correctMaterial: {fileID: 0}
 --- !u!1 &314896674997042497
 GameObject:
   m_ObjectHideFlags: 0

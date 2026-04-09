@@ -5,7 +5,7 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     private TextMeshProUGUI text;
-    private int TimeLimit = 240; //4 mins time limit
+    private int TimeLimit = 480; //4 mins time limit
     private int currentTime;
 
     //private bool failed = false;

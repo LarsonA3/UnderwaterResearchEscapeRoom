@@ -18,7 +18,8 @@ public class PlayButton : MonoBehaviour
 
     public void ClickPlayButton()
     {
-        print("Play button pressed");
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene("UnderwaterGame");
     }
 

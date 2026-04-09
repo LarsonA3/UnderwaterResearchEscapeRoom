@@ -51,9 +51,7 @@ public class FuseBox : MonoBehaviour
         {
             BoxDoorAnimator.enabled = true;
             boxDoor.GetComponent<AudioSource>().Play();
-
-            //StartCoroutine(DestroyDoor());
-            //set up fuse slots
+            opened = true;
         }
     }
 

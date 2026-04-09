@@ -23,8 +23,11 @@ public class Terminal : MonoBehaviour
 
     private Keyboard kb;
 
-    private FirstPersonController playerController;
+
     private PlayerInput playerInput;
+    private FirstPersonController fpsController;
+    private StarterAssetsInputs starterInputs;
+    private CharacterController charController;
     private GameObject crosshairObject;
     private QuitToMenu quitToMenu;
 
@@ -154,11 +157,19 @@ public class Terminal : MonoBehaviour
 
         CachePlayerRefs();
         isFocused = true;
+        FPSLock.Frozen = true;
 
-        if (playerController != null) playerController.enabled = false;
-        if (playerInput != null)      playerInput.enabled = false;
-        if (crosshairObject != null)  crosshairObject.SetActive(false);
-        if (quitToMenu != null)       quitToMenu.enabled = false;
+        if (playerInput != null)    playerInput.DeactivateInput();
+        if (fpsController != null)  fpsController.enabled = false;
+        if (charController != null) charController.enabled = false;
+        if (starterInputs != null) {
+            starterInputs.move = Vector2.zero;
+            starterInputs.look = Vector2.zero;
+            starterInputs.jump = false;
+            starterInputs.sprint = false;
+        }
+        if (crosshairObject != null) crosshairObject.SetActive(false);
+        if (quitToMenu != null)      quitToMenu.enabled = false;
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = false;
@@ -168,23 +179,31 @@ public class Terminal : MonoBehaviour
 
     private void ReleaseFocus() {
         isFocused = false;
+        FPSLock.Frozen = false;
 
-        if (playerController != null) playerController.enabled = true;
-        if (playerInput != null)      playerInput.enabled = true;
-        if (crosshairObject != null)  crosshairObject.SetActive(true);
-        if (quitToMenu != null)       quitToMenu.enabled = true;
+        if (starterInputs != null) {
+            starterInputs.move = Vector2.zero;
+            starterInputs.look = Vector2.zero;
+        }
+        if (fpsController != null)  fpsController.enabled = true;
+        if (charController != null) charController.enabled = true;
+        if (playerInput != null)    playerInput.ActivateInput();
+        if (crosshairObject != null) crosshairObject.SetActive(true);
+        if (quitToMenu != null)      quitToMenu.enabled = true;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     private void CachePlayerRefs() {
-        if (playerController != null) return;
+        if (playerInput != null) return;
 
         var player = GameObject.FindGameObjectWithTag("Player");
         if (player != null) {
-            playerController = player.GetComponent<FirstPersonController>();
             playerInput = player.GetComponent<PlayerInput>();
+            fpsController = player.GetComponent<FirstPersonController>();
+            starterInputs = player.GetComponent<StarterAssetsInputs>();
+            charController = player.GetComponent<CharacterController>();
         }
 
         if (crosshairObject == null) {

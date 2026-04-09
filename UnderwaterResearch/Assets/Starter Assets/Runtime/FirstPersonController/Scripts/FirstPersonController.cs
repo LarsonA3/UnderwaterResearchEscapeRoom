@@ -112,6 +112,7 @@ namespace StarterAssets
 
 		private void Update()
 		{
+			if (FPSLock.Frozen) return;
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
@@ -119,6 +120,7 @@ namespace StarterAssets
 
 		private void LateUpdate()
 		{
+			if (FPSLock.Frozen) return;
 			CameraRotation();
 		}
 

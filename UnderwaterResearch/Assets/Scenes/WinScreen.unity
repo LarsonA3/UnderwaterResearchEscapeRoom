@@ -227,7 +227,7 @@ Transform:
   m_GameObject: {fileID: 2261363}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -35.06, y: -0, z: 31.5}
+  m_LocalPosition: {x: -35.06, y: -0, z: 62}
   m_LocalScale: {x: 8.8489, y: 8.8489, z: 8.8489}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -490,7 +490,7 @@ MonoBehaviour:
   - Assets/Sprites/Materials/Pallette.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_87334ece-33d0-4c11-8329-c7396b8cf017
+    name: UM_OperatedMesh_4fe4df3b-ab3b-4ac1-9cb8-f815f9de9431
     skinnedMesh: 0
     sharedMesh: {fileID: 771705695}
     buidVersion:
@@ -503,7 +503,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 87334ece-33d0-4c11-8329-c7396b8cf017
+  sourceMeshRendererGUID: 4fe4df3b-ab3b-4ac1-9cb8-f815f9de9431
   guid: a6cf1970-4928-473d-a2b5-1f8d6de8a8b7
   localOptions:
     RecalculateTangents: 0

@@ -6,7 +6,8 @@ public enum SoundType
     SIREN,
     PRINTER,
     DOOR,
-    SUCCESS
+    SUCCESS,
+    REACTOR,
 }
 
 public class SoundCollection
@@ -72,6 +73,7 @@ public class SoundManager : MonoBehaviour
             {SoundType.PRINTER, new SoundCollection("printer") }, // printer.wav
             {SoundType.DOOR, new SoundCollection("door") },       // door.wav
             {SoundType.SUCCESS, new SoundCollection("success") }, // success.mp3
+            {SoundType.REACTOR, new SoundCollection("reactor") }, // reactor.wav
         };
     }
 

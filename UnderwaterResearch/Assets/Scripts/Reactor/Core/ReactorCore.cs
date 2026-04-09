@@ -7,11 +7,16 @@ public class ReactorCore : MonoBehaviour
     public MeshRenderer coreMesh;
     public Material coreBlue;
     public Material coreRed;
+    [SerializeField] private AudioSource reactorAudioSource;
     private float intensity = 0f;
+    public GameObject reactor;
 
+    public bool reactivated = false;
     private bool up = true;
 
-    void Start() {}
+    void Start() {
+        if (reactorAudioSource == null) reactorAudioSource = GetComponent<AudioSource>();
+    }
 
     void Update() {
         if (up) {
@@ -33,6 +38,17 @@ public class ReactorCore : MonoBehaviour
     }
 
     public void SetLightColor(Color color) { if (coreLight != null) coreLight.color = color; }
-    public void SetCoreBlue() { if (coreMesh != null) coreMesh.material = coreBlue; }
+    public void SetCoreBlue() { 
+        if (coreMesh != null) { 
+            coreMesh.material = coreBlue; 
+            reactivated = true;
+            SetLightColor(Color.cyan);
+            if (reactorAudioSource != null)
+            {
+                reactorAudioSource.spatialBlend = 1.0f;
+                reactorAudioSource.Play();
+            }
+        } 
+    }
     public void SetCoreRed() { if (coreMesh != null) coreMesh.material = coreRed; }
 }

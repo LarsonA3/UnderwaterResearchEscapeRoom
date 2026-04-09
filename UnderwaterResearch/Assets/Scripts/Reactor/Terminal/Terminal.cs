@@ -72,7 +72,7 @@ public class Terminal : MonoBehaviour
     void Update() {
         if (!terminalActive) return;
 
-        if (isFocused && kb != null && kb.escapeKey.wasPressedThisFrame) {
+        if (isFocused && kb != null && kb.qKey.wasPressedThisFrame) {
             ReleaseFocus();
             return;
         }

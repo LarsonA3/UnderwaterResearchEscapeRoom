@@ -789,6 +789,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 22.7
       objectReference: {fileID: 0}
+    - target: {fileID: 1655102487486800099, guid: 1938c9b6b9df9ac4db1ac29de5ab392f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.458
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655102487486800099, guid: 1938c9b6b9df9ac4db1ac29de5ab392f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.05
+      objectReference: {fileID: 0}
     - target: {fileID: 1679886665822575260, guid: 1938c9b6b9df9ac4db1ac29de5ab392f, type: 3}
       propertyPath: m_LocalPosition.z
       value: 23.205
@@ -4547,6 +4555,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4137840548962673065, guid: 77f47f4ca97397840bdfdc5393ac89ef, type: 3}
   m_PrefabInstance: {fileID: 872391130}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &933701699
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 933701701}
+  - component: {fileID: 933701700}
+  m_Layer: 0
+  m_Name: a0bad013-bacb-46f2-b7c2-4300335f5b46
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &933701700
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933701699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &933701701
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933701699}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &934604465
 GameObject:
   m_ObjectHideFlags: 0
@@ -9145,6 +9198,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2738208222414221153, guid: 2ad89b0e79bd44593888a5aa7a104ba9, type: 3}
   m_PrefabInstance: {fileID: 1929652374}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1932892294
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1932892296}
+  - component: {fileID: 1932892295}
+  m_Layer: 0
+  m_Name: 7d6a5a65-e3ff-4283-9f62-ce36f68354d0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1932892295
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932892294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &1932892296
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932892294}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1939732524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11668,3 +11766,5 @@ SceneRoots:
   - {fileID: 677353185}
   - {fileID: 636371929}
   - {fileID: 506830198}
+  - {fileID: 933701701}
+  - {fileID: 1932892296}
